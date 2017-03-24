@@ -14,17 +14,18 @@ In particular, when configuring the jupyter_config.py
 set the following:
 
 ```
-c.DockerSpawner.container_ip = "0.0.0.0"
+#select the spawner
 c.JupyterHub.spawner_class = 'dockerspawner.SystemUserSpawner'
-c.SystemUserSpawner.host_homedir_format_string = '/home/{username}'
+
+c.DockerSpawner.container_ip = "0.0.0.0"
 c.DockerSpawner.volumes = { '/home/{username}':'/home/{username}' }
 c.DockerSpawner.remove_containers = True
 
-#docker container start with systemuserlab
+#docker container start with lab application, from user homedir
 c.DockerSpawner.container_image = 'natbusa/sysuser-scipy-lab'
 
-c.Spawner.notebook_dir = '/home/{username}'
-c.Spawner.default_url  = '/lab'
+# map the volumes
+c.SystemUserSpawner.host_homedir_format_string = '/home/{username}'
 ```
 
 This particular server initially runs (within the container) as the `root` user.
