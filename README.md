@@ -40,7 +40,7 @@ For an ansible/vagrant setup for this system user jupyter lab configuration chec
 https://github.com/natbusa/datalab
 
 ## use this image
-This image has been uploaded on docker hub as [natbusa/sysuser-scipy-lab]()
+This image has been uploaded on docker hub as [natbusa/sysuser-scipy-lab](https://hub.docker.com/r/natbusa/sysuser-scipy-lab/)
 
 ## build your own image
 
