@@ -1,7 +1,7 @@
 # Build as natbusa/sysuser-scipy-lab
 # Run with the DockerSpawner in JupyterHub
 
-FROM jupyter/datascience-notebook
+FROM jupyter/scipy-notebook
 
 MAINTAINER Natalino Busa <natalino.busa@gmail.com>
 
