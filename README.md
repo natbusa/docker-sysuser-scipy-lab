@@ -1,4 +1,4 @@
-# natbusa/sysuser-scipy-lab
+# natbusa/jupyterhub-scipy-lab
 
 Built from the `jupyterhub/systemuser` base image.  
 see: https://github.com/jupyterhub/dockerspawner/blob/master/systemuser/README.md
@@ -22,7 +22,7 @@ c.DockerSpawner.volumes = { '/home/{username}':'/home/{username}' }
 c.DockerSpawner.remove_containers = True
 
 #docker container start with lab application, from user homedir
-c.DockerSpawner.container_image = 'natbusa/sysuser-scipy-lab'
+c.DockerSpawner.container_image = 'natbusa/jupyterhub-scipy-lab'
 
 # map the volumes
 c.SystemUserSpawner.host_homedir_format_string = '/home/{username}'
@@ -40,7 +40,7 @@ For an ansible/vagrant setup for this system user jupyter lab configuration chec
 https://github.com/natbusa/datalab
 
 ## use this image
-This image has been uploaded on docker hub as [natbusa/sysuser-scipy-lab](https://hub.docker.com/r/natbusa/sysuser-scipy-lab/)
+This image has been uploaded on docker hub as [natbusa/jupyterhub-scipy-lab](https://hub.docker.com/r/natbusa/jupyterhub-scipy-lab/)
 
 ## build your own image
 

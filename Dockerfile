@@ -1,4 +1,4 @@
-# Build as natbusa/sysuser-scipy-lab
+# Build as natbusa/jupyterhub-scipy-lab
 # Run with the DockerSpawner in JupyterHub
 
 FROM jupyter/scipy-notebook
